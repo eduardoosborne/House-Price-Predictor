@@ -1,0 +1,186 @@
+# House Price Predictor
+
+## Descrição
+
+O House Price Predictor é uma aplicação web de previsão de preços imobiliários baseada em Machine Learning. O projeto utiliza o dataset Ames Housing para estimar o valor de uma habitação com base em 79 características diferentes do imóvel.
+
+A aplicação foi desenvolvida para permitir que utilizadores obtenham rapidamente uma estimativa de preço de uma casa sem depender exclusivamente de avaliações imobiliárias tradicionais.
+
+---
+
+## Objetivo
+
+O objetivo do projeto é criar uma ferramenta inteligente capaz de prever preços de imóveis utilizando dados reais do mercado imobiliário.
+
+A aplicação pode ser útil para:
+
+- Compradores que desejam validar se um imóvel está com preço justo
+- Vendedores que querem definir um preço competitivo
+- Investidores imobiliários que precisam analisar imóveis rapidamente
+- Estudantes e investigadores da área de ciência de dados
+
+---
+
+## Dataset
+
+O projeto utiliza o dataset Ames Housing, disponível no Kaggle.
+https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/overview
+
+O dataset contém:
+
+- 1460 registos de vendas de habitações
+- 79 variáveis explicativas
+- Informações sobre qualidade da construção, tamanho, localização, garagem, cave, cobertura, entre outros fatores
+
+Informações mais detalhadas do dataset em data/data_description.txt
+
+---
+
+## Tecnologias Utilizadas
+
+- Python
+- pandas
+- scikit-learn
+- Flask
+- joblib
+- HTML
+- CSS
+- JavaScript
+
+---
+
+## Modelo de Machine Learning
+
+O modelo principal utilizado é o Random Forest Regressor.
+
+Configuração utilizada:
+
+- 300 árvores (`n_estimators=300`)
+- `random_state=42`
+
+---
+
+## Pipeline de Pré-processamento
+
+O pipeline foi desenvolvido utilizando `ColumnTransformer`.
+
+### Variáveis Numéricas
+
+- Preenchimento de valores em falta com mediana
+
+### Variáveis Categóricas
+
+- Preenchimento de valores em falta com moda
+- Codificação OneHotEncoder com `handle_unknown='ignore'`
+
+---
+
+## Arquitetura do Sistema
+
+Fluxo da aplicação:
+
+1. O utilizador preenche o formulário web
+2. O frontend envia os dados para o servidor Flask
+3. O Flask transforma os dados em DataFrame
+4. O pipeline de Machine Learning processa os dados
+5. O modelo gera a previsão do preço
+6. O resultado é devolvido ao navegador
+
+---
+
+## Estrutura do Projeto
+
+```bash
+project/
+├── main.py
+├── app.py
+├── model.pkl
+├── data/
+│   ├── train.csv
+│   ├── test.csv
+│   └── sample_submission.csv
+├── results/
+│   ├── submission.csv
+│   └── test.txt
+├── templates/
+│   └── index.html
+└── static/
+    └── style.css
+```
+
+---
+
+## Como Executar
+
+### Pré-requisitos
+
+Instalar Python 3.8 ou superior.
+
+Instalar as dependências:
+
+```bash
+pip install scikit-learn pandas flask joblib
+```
+
+---
+
+### Passo 1 — Treinar o Modelo
+
+Adicionar no ficheiro `main.py`:
+
+```python
+import joblib
+joblib.dump(model, "model.pkl")
+```
+
+Executar:
+
+```bash
+python main.py
+```
+
+O ficheiro `model.pkl` será gerado automaticamente.
+
+---
+
+### Passo 2 — Iniciar o Servidor
+
+Executar:
+
+```bash
+python app.py
+```
+
+O terminal deverá apresentar algo semelhante a:
+
+```bash
+Running on http://127.0.0.1:5000
+Debug mode: on
+```
+
+---
+
+### Passo 3 — Utilizar a Aplicação
+
+Abrir o navegador e aceder a:
+
+```bash
+http://localhost:5000
+```
+
+Preencher os campos do formulário e clicar em estimar preço.
+
+---
+
+## Notas Importantes
+
+- O servidor Flask deve permanecer ativo durante a utilização da aplicação
+- Para parar o servidor utilizar `Ctrl + C`
+- Após alterações ao modelo, é necessário executar novamente o `main.py`
+- Recomenda-se executar os scripts diretamente pelo terminal
+
+---
+
+## Autor e contexto
+O projeto foi realizado para disciplina de Inteligência Artificial na FEUP - Faculdade de Engenharia da Universidade do Porto
+Autor: Eduardo Oliveira Osborne

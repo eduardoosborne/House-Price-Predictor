@@ -1,0 +1,133 @@
+MODEL: neural_network
+============================================================
+
+House ID 1461
+  Model Prediction : $152,469
+  Sample Prediction: $169,277.0524984
+  Difference       : $-16,808.052498400008
+  Similarity Score : 90.07%
+
+House ID 1462
+  Model Prediction : $164,063
+  Sample Prediction: $187,758.393988768
+  Difference       : $-23,695.393988767988
+  Similarity Score : 87.38%
+
+House ID 1463
+  Model Prediction : $197,379
+  Sample Prediction: $183,583.683569555
+  Difference       : $13,795.316430445004
+  Similarity Score : 92.49%
+
+House ID 1464
+  Model Prediction : $190,529
+  Sample Prediction: $179,317.47751083
+  Difference       : $11,211.52248916999
+  Similarity Score : 93.75%
+
+House ID 1465
+  Model Prediction : $170,524
+  Sample Prediction: $150,730.079976501
+  Difference       : $19,793.920023499
+  Similarity Score : 86.87%
+
+House ID 1466
+  Model Prediction : $173,127
+  Sample Prediction: $177,150.989247307
+  Difference       : $-4,023.9892473070067
+  Similarity Score : 97.73%
+
+House ID 1467
+  Model Prediction : $164,108
+  Sample Prediction: $172,070.659229164
+  Difference       : $-7,962.659229164012
+  Similarity Score : 95.37%
+
+House ID 1468
+  Model Prediction : $153,411
+  Sample Prediction: $175,110.956519547
+  Difference       : $-21,699.956519547006
+  Similarity Score : 87.61%
+
+House ID 1469
+  Model Prediction : $172,795
+  Sample Prediction: $162,011.698831665
+  Difference       : $10,783.30116833499
+  Similarity Score : 93.34%
+
+House ID 1470
+  Model Prediction : $136,905
+  Sample Prediction: $160,726.247831419
+  Difference       : $-23,821.247831418994
+  Similarity Score : 85.18%
+
+House ID 1471
+  Model Prediction : $198,363
+  Sample Prediction: $157,933.279456005
+  Difference       : $40,429.720543995005
+  Similarity Score : 74.40%
+
+House ID 1472
+  Model Prediction : $97,415
+  Sample Prediction: $145,291.245020389
+  Difference       : $-47,876.245020389004
+  Similarity Score : 67.05%
+
+House ID 1473
+  Model Prediction : $103,059
+  Sample Prediction: $159,672.017631819
+  Difference       : $-56,613.017631819006
+  Similarity Score : 64.54%
+
+House ID 1474
+  Model Prediction : $146,313
+  Sample Prediction: $164,167.518301885
+  Difference       : $-17,854.518301884993
+  Similarity Score : 89.12%
+
+House ID 1475
+  Model Prediction : $89,228
+  Sample Prediction: $150,891.638244053
+  Difference       : $-61,663.638244053
+  Similarity Score : 59.13%
+
+House ID 1476
+  Model Prediction : $297,468
+  Sample Prediction: $179,460.96518734
+  Difference       : $118,007.03481265999
+  Similarity Score : 34.24%
+
+House ID 1477
+  Model Prediction : $226,032
+  Sample Prediction: $185,034.62891405
+  Difference       : $40,997.37108595
+  Similarity Score : 77.84%
+
+House ID 1478
+  Model Prediction : $267,806
+  Sample Prediction: $182,352.192644656
+  Difference       : $85,453.807355344
+  Similarity Score : 53.14%
+
+House ID 1479
+  Model Prediction : $244,602
+  Sample Prediction: $183,053.458213802
+  Difference       : $61,548.54178619801
+  Similarity Score : 66.38%
+
+House ID 1480
+  Model Prediction : $505,096
+  Sample Prediction: $187,823.339254278
+  Difference       : $317,272.660745722
+  Similarity Score : 0.00%
+
+============================================================
+SUMMARY
+============================================================
+Average Model Price : $177,427.53
+Average Sample Price: $179,183.92
+Average Difference  : $-1,756.39
+Average Similarity  : 74.78%
+
+Training MAE        : 22,605.66
+Training R2 Score   : 0.8129
