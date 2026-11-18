@@ -857,16 +857,16 @@
     <div class="price" id="price-rf">—</div>
   </div>
   <div class="result" id="card-lr">
-    <div class="result-label">Previsão por: Linear Regression</div>
+    <div class="result-label">Previsão por: Ridge</div>
     <div class="price" id="price-lr">—</div>
   </div>
   <div class="result" id="card-nn">
-    <div class="result-label">Previsão por: Neural Network</div>
+    <div class="result-label">Previsão por: Gradient Boosting</div>
     <div class="price" id="price-nn">—</div>
   </div>
   <!-- Média destacada -->
   <div class="result average">
-    <div class="result-label">Preço Final (média dos modelos)</div>
+    <div class="result-label">Preço final (ensemble dos 2 melhores modelos)</div>
     <div class="price" id="price-avg">—</div>
   </div>
 </div>
@@ -925,8 +925,8 @@
 
       const p = data.predictions;
       document.getElementById("price-rf").textContent  = fmt(p["Random Forest"]);
-      document.getElementById("price-lr").textContent  = fmt(p["Linear Regression"]);
-      document.getElementById("price-nn").textContent  = fmt(p["Neural Network"]);
+      document.getElementById("price-lr").textContent  = fmt(p["Ridge"]);
+      document.getElementById("price-nn").textContent  = fmt(p["Gradient Boosting"]);
       document.getElementById("price-avg").textContent = fmt(data.average);
 
       grid.classList.add("visible");
