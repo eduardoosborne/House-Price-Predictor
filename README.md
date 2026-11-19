@@ -52,4 +52,4 @@ make web       # versão Flask em http://127.0.0.1:5000
 **Tecnologias:** Python, pandas, NumPy, scikit-learn, Gradio, Flask, Hugging Face Hub.
 
 ---
-Projeto desenvolvido na disciplina de Inteligência Artificial da FEUP (Universidade do Porto) e expandido depois. Autor: **Eduardo Oliveira Osborne** · [LinkedIn](https://www.linkedin.com/in/eduardo-osborne-35a22728b/)
+Projeto desenvolvido na disciplina de Inteligência Artificial da FEUP (Faculdade de Engenharia da Universidade do Porto) e expandido depois. Autor: **Eduardo Oliveira Osborne** · [LinkedIn](https://www.linkedin.com/in/eduardo-osborne-35a22728b/)
