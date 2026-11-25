@@ -2,7 +2,7 @@
 
 Modelo de Machine Learning que estima o preço de venda de casas a partir de 79 características do imóvel, treinado no dataset **Ames Housing** da competição do Kaggle [House Prices – Advanced Regression Techniques](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques).
 
-**Modelo:** [Hugging Face Hub](https://huggingface.co/eduardoosborne/house-price-predictor) · **Kaggle:** score público `PREENCHER` (posição `PREENCHER`)
+**Modelo:** [Hugging Face Hub](https://huggingface.co/eduardoosborne/house-price-predictor) · **Kaggle:** score público 0.12977 
 
 ![demo](docs/Demo.png)
 
