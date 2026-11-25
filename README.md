@@ -2,9 +2,9 @@
 
 Modelo de Machine Learning que estima o preço de venda de casas a partir de 79 características do imóvel, treinado no dataset **Ames Housing** da competição do Kaggle [House Prices – Advanced Regression Techniques](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques).
 
-**▶ Demo online:** [Hugging Face Space](https://huggingface.co/spaces/eduardoosborne/house-price-predictor) · **Modelo:** [Hugging Face Hub](https://huggingface.co/eduardoosborne/house-price-predictor) · **Kaggle:** score público `PREENCHER` (posição `PREENCHER`)
+**Modelo:** [Hugging Face Hub](https://huggingface.co/eduardoosborne/house-price-predictor) · **Kaggle:** score público `PREENCHER` (posição `PREENCHER`)
 
-![demo](docs/demo.png)
+![demo](docs/Demo.png)
 
 ## Resultados
 
@@ -25,7 +25,7 @@ O preço final é um **ensemble** (média em escala log) dos dois melhores model
 2. **Pré-processamento** (`ColumnTransformer`): mediana para números faltantes, moda + One-Hot Encoding para categorias e normalização (`StandardScaler`) para os modelos sensíveis à escala.
 3. **Alvo em log:** os preços são assimétricos (poucas casas muito caras); treinar em `log(1 + preço)` deixa a distribuição mais simétrica e alinha o treino com a métrica do Kaggle.
 4. **Avaliação honesta:** todas as métricas vêm de validação cruzada, nunca de dados que o modelo já viu.
-5. **Deploy:** demo em Gradio no Hugging Face Spaces e versão web em Flask + HTML/CSS.
+5. **Deploy:** modelo publicado no Hugging Face Hub, demo interativa em Gradio e versão web em Flask + HTML/CSS (ambas para rodar localmente).
 
 ## Como rodar
 
@@ -40,9 +40,10 @@ make web       # versão Flask em http://127.0.0.1:5000
 
 ```
 ├── train.py          # treino, validação cruzada e submissões do Kaggle
-├── app.py            # demo Gradio (Hugging Face Spaces)
+├── predictor.py      # lógica de previsão (usada pela demo)
+├── app.py            # demo Gradio
 ├── flask_app.py      # versão web Flask
-├── publish_hf.py     # publica modelo e demo no Hugging Face
+├── publish_hf.py     # publica o modelo no Hugging Face Hub
 ├── models/           # modelos treinados + metadata.json
 ├── results/          # métricas e arquivos de submissão
 ├── templates/ static/
